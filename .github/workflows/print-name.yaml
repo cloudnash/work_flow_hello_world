@@ -1,1 +1,12 @@
+name: print-name
 
+on:
+        branch: [name]
+
+jobs:
+        printname:
+         runs-on: ubuntu-latest
+         steps:
+                 - name: Printing Message......
+                   run: |
+                         echo "This is Printing-Name"
