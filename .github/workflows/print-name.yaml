@@ -1,17 +1,17 @@
 name: print-name
 
 on:
-        push:
-                branches:
-                  - main
+  push:
+    branches:
+      - main
 
 jobs:
-        printjob:
-         runs-on: ubuntu-latest
-         steps:
-                 - name: Checkout code
-                   use: actions/checkout@v4
+  print-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4   # Ensure this says "uses", not "use"
 
-                 - name: Printing Message......
-                   run: |
-                         echo "This is Print-Name"
+      - name: Print Message
+        run: echo " The is print-name"
+
