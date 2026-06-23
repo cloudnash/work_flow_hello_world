@@ -9,4 +9,4 @@ jobs:
          steps:
                  - name: Printing Message......
                    run: |
-                         echo "This is Printing-Name"
+                         echo "This is Print-Name"
