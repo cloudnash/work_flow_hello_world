@@ -1,12 +1,17 @@
 name: print-name
 
 on:
-        branch: [name]
+        push:
+                branches:
+                  - main
 
 jobs:
-        printname:
+        printjob:
          runs-on: ubuntu-latest
          steps:
+                 - name: Checkout code
+                   use: actions/checkout@v4
+
                  - name: Printing Message......
                    run: |
                          echo "This is Print-Name"
